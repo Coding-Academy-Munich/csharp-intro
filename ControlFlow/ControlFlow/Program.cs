@@ -4,7 +4,55 @@
     {
         static void Main(string[] args)
         {
-            TestReadLine();
+            TestFact3();
+        }
+
+        static void TestFact3()
+        {
+            int result = 1;
+            for (int n = 1; n <= 5; n++)
+            {
+                result = result * n;
+            }
+            Console.WriteLine($"result = {result}");
+        }
+
+        static void TestFact2()
+        {
+            int result = 1;
+
+            Console.WriteLine("Please enter the upper bound:");
+            string? upperBound = Console.ReadLine();
+
+            if (upperBound == null)
+            {
+                return;
+            }
+
+            int factBound = int.Parse(upperBound);
+
+            int n = 1;
+            while (n <= factBound)
+            {
+                result = result * n;
+                n++;
+            }
+
+            Console.WriteLine($"n = {n}, result = {result}");
+        }
+
+        static void TestFact1()
+        {
+            int n = 5;
+            int result = 1;
+
+            while (n > 0)
+            {
+                result = result * n;
+                n--;
+            }
+
+            Console.WriteLine($"n = {n}, result = {result}");
         }
 
         static void TestReadLine()
