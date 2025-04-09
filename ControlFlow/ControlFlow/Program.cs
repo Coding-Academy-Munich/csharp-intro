@@ -1,10 +1,43 @@
 ﻿namespace ControlFlow
 {
     internal class Program
-    { 
+    {
         static void Main(string[] args)
         {
-            TestPerson();
+            GreetingSwitch();
+        }
+
+        static void TestSwitch()
+        {
+            int grade = 7;
+            string text;
+
+            switch (grade)
+            {
+                case 1:
+                    text = "Very good";
+                    break;
+                case 2:
+                    text = "Good";
+                    break;
+                case 3:
+                    text = "Average";
+                    break;
+                case 4:
+                    text = "Sufficient";
+                    break;
+                case 5:
+                    text = "Bad";
+                    break;
+                case 6:
+                    text = "Very Bad";
+                    break;
+                default:
+                    text = "Unknown";
+                    break;
+            }
+
+            Console.WriteLine(text);
         }
 
         static void TestPerson()
@@ -30,6 +63,29 @@
             Console.WriteLine($"Old person can take vacation: {oldPerson.CanTakeVacation()}");
         }
 
+        static void GreetingSwitch()
+        {
+            string name = "Jack";
+
+            switch (name)
+            {
+                case "John":
+                    Console.WriteLine("Hello John, the boss wants to see you!");
+                    break;
+                case "Jane":
+                    Console.WriteLine("Hello, Ms. Doe, how are you today?");
+                    break;
+                case "Bob":
+                case "Ben":
+                case "Bill":
+                    Console.WriteLine($"Hello {name}, your access has been revoked!");
+                    break;
+                default:
+                    Console.WriteLine($"Hello {name}, how are you today?");
+                    break;
+            }
+        }
+
         static void GreetingIf()
         {
             string name = "Ben";
@@ -37,7 +93,7 @@
             if (name == "John")
             {
                 Console.WriteLine("Hello John, the boss wants to see you!");
-            } 
+            }
             else if (name == "Jane")
             {
                 Console.WriteLine("Hello, Ms. Doe, how are you today?");
@@ -88,8 +144,8 @@
             if (x == 1)
             {
                 if (y == 1)
-                { 
-                    Console.WriteLine("x is 1 and y is 1"); 
+                {
+                    Console.WriteLine("x is 1 and y is 1");
                 }
             }
             else
