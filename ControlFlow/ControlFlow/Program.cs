@@ -4,7 +4,27 @@
     {
         static void Main(string[] args)
         {
-            GreetingSwitch();
+            TestReadLine();
+        }
+
+        static void TestReadLine()
+        {
+            Console.WriteLine("Please enter some text:");
+            string? input = Console.ReadLine();
+            if (input == null)
+            {
+                Console.WriteLine("The input was null.");
+            }
+            else
+            {
+                Console.WriteLine($"The input was: {input}.");
+            }
+        }
+
+        static void TestNullableString()
+        {
+            string? myString = "my string";
+            Console.WriteLine($"myString = '{myString}'");
         }
 
         static void TestSwitch()
