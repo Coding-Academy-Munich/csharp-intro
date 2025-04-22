@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandling", "ErrorHandling\ErrorHandling.csproj", "{92D80FE0-1B9A-4CD6-A79E-B04C84E869A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntSqrt", "IntSqrt\IntSqrt.csproj", "{160143C5-4ED9-4335-ACAE-13361159BAF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92D80FE0-1B9A-4CD6-A79E-B04C84E869A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D80FE0-1B9A-4CD6-A79E-B04C84E869A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D80FE0-1B9A-4CD6-A79E-B04C84E869A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D80FE0-1B9A-4CD6-A79E-B04C84E869A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{160143C5-4ED9-4335-ACAE-13361159BAF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160143C5-4ED9-4335-ACAE-13361159BAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160143C5-4ED9-4335-ACAE-13361159BAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160143C5-4ED9-4335-ACAE-13361159BAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB2ECF65-9043-47AA-B1D9-B4A64DE023C1}
+	EndGlobalSection
+EndGlobal

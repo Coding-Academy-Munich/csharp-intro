@@ -4,7 +4,25 @@
     {
         static void Main(string[] args)
         {
-            TestFact3();
+            CheckPassword();
+        }
+
+        static void CheckPassword()
+        {
+            bool isAccessGranted = false;
+
+            for (int n = 0; n < 10; n++)
+            {
+                Console.WriteLine("Please enter a password:");
+                string? userPassword = Console.ReadLine();
+                if (userPassword == "password")
+                {
+                    isAccessGranted = true;
+                    break;
+                }
+            }
+
+            Console.WriteLine($"User has access: {isAccessGranted}");
         }
 
         static void TestFact3()
