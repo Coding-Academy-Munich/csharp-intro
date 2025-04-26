@@ -37,14 +37,24 @@ DialoguePlayer colorDialoguePlayer = new();
 colorDialoguePlayer.AddRange(colorLines);
 colorDialoguePlayer.Present("\nColor Dialogue Player:");
 
+DialoguePlayer audioDialoguePlayer = new();
+for (int i = 1; i <= 7; i++)
+{
+    audioDialoguePlayer.Add(new AudioLine($"Audio/joe-jill-dialogue-00{i}.wav"));
+}
+audioDialoguePlayer.Present();
+
 
 List<ILine> practiceLines = [
     new ColorLine("Joe", "Oh, that is so terrible!", Emotion.Sad),
     new Line("Jill", "What's the matter?", pauseBeforeStart: true),
+    new AudioLine("Audio/joe-jill-dialogue-002.wav"),
     new ColorLine("Joe", "I lost my MacGuffin!", Emotion.Sad),
     new Line("Jill", "You never take care of things!", Emotion.Angry, true),
+    new AudioLine("Audio/joe-jill-dialogue-004.wav"),
     new ColorLine("Joe", "You're one to talk!", Emotion.Angry),
     new Line("Jill", "Luckily for you, I've found your MacGuffin!", pauseBeforeStart: true),
+    new AudioLine("Audio/joe-jill-dialogue-006.wav"),
     new ColorLine("Joe", "Oh, Jill, you are the best!", Emotion.Happy),
  ];
 

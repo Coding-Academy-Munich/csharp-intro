@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals", "Animals\Animals.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalsInterface", "AnimalsInterface\AnimalsInterface.csproj", "{69013A31-B70A-457B-BFA5-E8C2507142ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialoguePlayer", "DialoguePlayer\DialoguePlayer.csproj", "{E0507416-B385-4C1A-BEF4-5C01CA69EBC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dialogue", "DialoguePlayer\Dialogue.csproj", "{E0507416-B385-4C1A-BEF4-5C01CA69EBC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
