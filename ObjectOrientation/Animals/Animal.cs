@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    internal class Animal
+    internal abstract class Animal
     {
         public string Name { get; private set; }
 
@@ -15,9 +15,11 @@ namespace Animals
             Name = name;
         }
 
-        public void Pet()
+        public virtual void Pet()
         {
             Console.WriteLine($"You are petting {Name}. They like it.");
         }
+
+        public abstract void MakeNoise();
     }
 }

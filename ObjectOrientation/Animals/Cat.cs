@@ -20,5 +20,17 @@ namespace Animals
         {
             Console.WriteLine($"{Name} meows.");
         }
+
+        public override void MakeNoise()
+        {
+            Meow();
+        }
+
+        public override void Pet()
+        {
+            Console.WriteLine($"You pet {Name}.");
+            Meow();
+            Console.WriteLine("They leave.");
+        }
     }
 }

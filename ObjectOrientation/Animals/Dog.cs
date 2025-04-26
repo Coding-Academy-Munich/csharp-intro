@@ -15,5 +15,16 @@ namespace Animals
         {
             Console.WriteLine($"{Name} barks.");
         }
+
+        public override void MakeNoise()
+        {
+            Bark();
+        }
+
+        public override void Pet()
+        {
+            base.Pet();
+            Bark();
+        }
     }
 }
